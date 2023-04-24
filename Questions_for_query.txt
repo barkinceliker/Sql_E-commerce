@@ -1,0 +1,40 @@
+--What are the product prices by category?(TABLE_Order)
+
+--What is the query that returns the order quantity based on the destination known order code?(TABLE_order_details)
+
+--What is the query that sorts the query of data with product price greater than or equal to 0 by product price?(TABLE_products)
+
+--What is the query that distinct counts with category code, and group by according to product category name?(TABLE_product_category)
+
+--What is the query that passes products_that_thenumber_of_companies_with_which_the_supplier_has_a_joint_agreement data with subquery by product_brand?(TABLE_products_supplier)
+
+--What is a query with a postal code greater than 0?
+
+--What is the question by credit card and payment approval? (TABLE_payment_Methods)
+
+--What is the query that returns the country payment id of the value from country shipping?(TABLE_country)
+
+--WHAT IS THE QUERY SELECTED BY Coupon TYPE AND ORDER BY STARTING DAY?(TABLE_coupons)
+
+--What is the query to prioritize the discount amount to its equal and discount rate lower than 5?(TABLE_discount)
+
+--What is the query that gets total feedback, average score and total, unique customers, number of discounts, total discount code used, different product counters received, different product category counters?(TABLE_cusomers_feedback)
+
+--What is the query that returns the total number of order tracking, the number of unique product categories ordered, and the number of unique products ordered?(TABLE_order_tracking)
+
+--What is the query that shows any record in the Employee field that contains the characters "A-Z" in the Contracted_company_name field, as well as any record with uppercase letters?"(TABLE_checks_or_gifts_given)
+
+--What is the query that sorts the results in descending order by department, average age, and average years of work?(TABLE_employee_details)
+
+--What is the query that lists the total number of employees, average number of employees, number of unique job roles, total salary, average salary, average vacation days, average sick leave days and average overtime hours for each department, and department phone information?(TABLE_employee_departments_details)
+
+--What is the query that is calculated by grouping information such as the number of managers with which characteristics, their average age, the number of managers in different countries, performance evaluations?(TABLE_supervisor_details)
+
+--What is the query that aggregates and groups the number of employees, job role name, job characteristics, and job description information for each job role?(TABLE_department_job_role_details)
+
+--What is the query from the table TABLE_contracted_companies_detail_list that lists the names of companies with above average annual net income, annual net income, average net income of all companies in the table, and the difference between each company's average net income?(TABLE_contracted_companies_detail_list)
+
+--What is the query that allows contract companies serving more than 10 countries and with annual net profits of more than $1 billion to be ranked according to the number of employees according to the discount rates they get by making bulk purchases?(TABLE_contracted_companies_detail_list)
+
+
+--What is the query written according to the department condition?(TABLE_DEPARTMENT_SWOT_ANALYSIS)

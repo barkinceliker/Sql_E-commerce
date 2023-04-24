@@ -26,22 +26,22 @@ Category A       | 50
 SELECT @@LANGUAGE as 'Language',Order_delivery_code,Order_quantity,Order_delivery_point,Order_that_has_the_nearest_supplier,Order_created_at FROM TABLE_order_details WHERE Order_quantity LIKE '%[0-3%]'
 
 Output:
-Language_    Order_delivery_code   Order_quantity     Order_delivery_point   Order_that_has_the_nearest_supplier			Order_created_at
-us_english	CODE001	                  2	                    Point A	             Supplier A	                            	2023-04-20
-us_english	CODE002					  1						Point B				 Supplier B									2023-04-21
-us_english	CODE003					  3						Point C				 Supplier A									2023-04-22
-us_english	CODE004					  2						Point D	             Supplier C									2023-04-23
-us_english	CODE005					  1						Point E				 Supplier D									2023-04-24	
-us_english	CODE006	                  3	                    Point F				 Supplier B									2023-04-25	
-us_english	CODE007					  2						Point G				 Supplier C									2023-04-26	
-us_english	CODE008					  1						Point H				 Supplier A									2023-04-27
-us_english	CODE009	                  3						Point I				 Supplier B								 	2023-04-28
-us_english	CODE010					  2						Point J	             Supplier D									2023-04-29
-us_english	CODE011					  1						Point K				 Supplier C									2023-04-30	
-us_english	CODE012					  2						Point L				 Supplier A								    2023-05-01
-us_english	CODE013					  1						Point M				 Supplier D	                                2023-05-02	
-us_english	CODE014					  2						Point N				 Supplier B									2023-05-03	
-us_english	CODE015					  3						Point O				 Supplier A									2023-05-04
+Language_    Order_delivery_code   Order_quantity     Order_delivery_point   Order_that_has_the_nearest_supplier		    Order_created_at
+us_english	CODE001	                  2	            Point A	             Supplier A	                            	        2023-04-20
+us_english	CODE002			  1	            Point B		     Supplier B						2023-04-21
+us_english	CODE003			  3		    Point C		     Supplier A						2023-04-22
+us_english	CODE004			  2		    Point D	             Supplier C						2023-04-23
+us_english	CODE005			  1		    Point E		     Supplier D						2023-04-24	
+us_english	CODE006	                  3	            Point F	             Supplier B						2023-04-25	
+us_english	CODE007			  2		    Point G		     Supplier C						2023-04-26	
+us_english	CODE008			  1		    Point H		     Supplier A						2023-04-27
+us_english	CODE009	                  3		    Point I		     Supplier B					        2023-04-28
+us_english	CODE010			  2		    Point J	             Supplier D						2023-04-29
+us_english	CODE011			  1		    Point K		     Supplier C						2023-04-30	
+us_english	CODE012			  2		    Point L		     Supplier A						2023-05-01
+us_english	CODE013			  1		    Point M		     Supplier D	                                        2023-05-02	
+us_english	CODE014			  2		    Point N		     Supplier B						2023-05-03	
+us_english	CODE015			  3		    Point O		     Supplier A						2023-05-04
 
 
 
@@ -49,22 +49,22 @@ us_english	CODE015					  3						Point O				 Supplier A									2023-05-04
 SELECT Product_name,Product_image_url,Product_brand,Product_supplier,Product_category,Made_IN,Product_price FROM TABLE_products WHERE Product_price>=0 ORDER BY Product_price asc
 
 Output:
-Product_name      Product_image_url			  Product_brand   Product_supplier   Product_category       Made_IN		Product_price
-Product A		http://imageurl.com/producta	Brand A			Supplier A			1					Country A	100
-Product B		http://imageurl.com/productb	Brand B			Supplier B			2					Country B	200
-Product C		http://imageurl.com/productc	Brand C			Supplier C			3					Country C	300
-Product D		http://imageurl.com/productd	Brand D			Supplier D			4					Country D	400
-Product E		http://imageurl.com/producte	Brand E			Supplier E			5					Country E	500
-Product F		http://imageurl.com/productf	Brand F			Supplier F			1					Country F	600
-Product G		http://imageurl.com/productg	Brand G			Supplier G			2					Country G	700
-Product H		http://imageurl.com/producth	Brand H			Supplier H			3					Country H	800
-Product I		http://imageurl.com/producti	Brand I			Supplier I			4					Country I	900
-Product J		http://imageurl.com/productj	Brand J			Supplier J			5					Country J	1000
-Product K		http://imageurl.com/productk	Brand K			Supplier K			1					Country K	1100
-Product L		http://imageurl.com/productl	Brand L			Supplier L			2					Country L	1200
-Product M		http://imageurl.com/productm	Brand M			Supplier M			3					Country M	1300
-Product N		http://imageurl.com/productn	Brand N			Supplier N			4					Country N	1400
-Product O		http://imageurl.com/producto	Brand O			Supplier O			5					Country O	1500
+Product_name              Product_image_url          Product_brand            Product_supplier         Product_category          Made_IN    Product_price
+Product A		http://imageurl.com/producta	Brand A			Supplier A			1		Country A	100
+Product B		http://imageurl.com/productb	Brand B			Supplier B			2		Country B	200
+Product C		http://imageurl.com/productc	Brand C			Supplier C			3		Country C	300
+Product D		http://imageurl.com/productd	Brand D			Supplier D			4		Country D	400
+Product E		http://imageurl.com/producte	Brand E			Supplier E			5		Country E	500
+Product F		http://imageurl.com/productf	Brand F			Supplier F			1		Country F	600
+Product G		http://imageurl.com/productg	Brand G			Supplier G			2		Country G	700
+Product H		http://imageurl.com/producth	Brand H			Supplier H			3		Country H	800
+Product I		http://imageurl.com/producti	Brand I			Supplier I			4		Country I	900
+Product J		http://imageurl.com/productj	Brand J			Supplier J			5		Country J	1000
+Product K		http://imageurl.com/productk	Brand K			Supplier K			1		Country K	1100
+Product L		http://imageurl.com/productl	Brand L			Supplier L			2		Country L	1200
+Product M		http://imageurl.com/productm	Brand M			Supplier M			3		Country M	1300
+Product N		http://imageurl.com/productn	Brand N			Supplier N			4		Country N	1400
+Product O		http://imageurl.com/producto	Brand O			Supplier O			5		Country O	1500
 
 
 
@@ -76,7 +76,7 @@ GROUP BY Product_category_name
 
 
 Output:
-Product_category_name    Category_code_count
+Product_category_name                 Category_code_count
 Category A					1
 Category B					1
 Category C					1
@@ -116,8 +116,8 @@ SELECT Products_supplierID,
 
 Output:
 Products_supplierID  Product_brand      Product_supplier_name  Products_supplier_address    Products_supplier_email        Products_that_thenumber_of_companies_with_which_the_supplier_has_a_joint_agreement  Products_supplier_security_approval  Products_supplier_institutional_approval   Products_supplier_evaluation_Score
-1						1				Supplier A				Address A					supplierA@email.com	1234567890							5																		1							1											90
-12						9				Supplier L				Address L					supplierL@email.com	2345678901							5																		1							0											80
+1			1		 Supplier A			Address A	     supplierA@email.com	                 1234567890							5																		1							1											90
+12			9		 Supplier L			Address L	    supplierL@email.com	                           2345678901							5																		1							0											80
 
 
 
@@ -125,22 +125,22 @@ Products_supplierID  Product_brand      Product_supplier_name  Products_supplier
 	SELECT *FROM TABLE_products_supplier_address WHERE Products_supplier_country LIKE '%[A-Z]%' AND Products_supplier_postal_code>=0
 
 Output:
-Products_supplier_AdressID  Products_supplier  Products_supplier_country  Products_supplier_city  Products_supplier_street  Products_supplier_postal_code  Created_at
-	1							1					 USA						New York		    5th Avenue						10022					2022-01-01
-	2							1					 USA						Los Angeles		    Rodeo Drive						90210					2022-01-02
-	3							2					 UK							London				Oxford Street					11201					2022-01-03
-	4							2					 UK							Manchester			Deansgate						35789					2022-01-04
-	5							3					 France						Paris				Champs-…lysÈes					75008					2022-01-05
-	6							3					 France						Marseille			Rue de la RÈpublique			13001					2022-01-06
-	7							4					 Japan						Tokyo				Ginza							1040061					2022-01-07
-	8							4					 Japan						Osaka				Dotonbori						5420071					2022-01-08
-	9							5					 Germany					Berlin				Kurf¸rstendamm					10707					2022-01-09
-	10							5					 Germany					Munich				Maximilianstraﬂe				80539					2022-01-10
-	11							6					 China						Beijing				Wangfujing Street				100006					2022-01-11
-	12							6					 China						Shanghai			Nanjing Road					200003					2022-01-12
-	13							7					 Australia					Sydney				Pitt Street						2000					022-01-13
-	14							7					 Australia					Melbourne			Chapel Street					3181					2022-01-14
-	15							8					 Brazil						Rio de Janeiro		Avenida Atl‚ntica				22070					2022-01-15
+Products_supplier_AdressID  Products_supplier  Products_supplier_country  Products_supplier_city  Products_supplier_street                  Products_supplier_postal_code                        Created_at
+	1			1			 USA		        New York		 5th Avenue					10022			                2022-01-01
+	2			1			 USA		        Los Angeles		 Rodeo Drive					90210				        2022-01-02
+	3			2			 UK			London		         Oxford Street					11201					2022-01-03
+	4			2			 UK			Manchester	         Deansgate					35789				        2022-01-04
+	5			3			 France			Paris			 Champs-√âlys√©es					75008					2022-01-05
+	6			3			 France			Marseille		 Rue de la R√©publique			        13001				        2022-01-06
+	7			4			 Japan			Tokyo			 Ginza						1040061				        2022-01-07
+	8			4			 Japan			Osaka			 Dotonbori					5420071				        2022-01-08
+	9		        5			 Germany		Berlin			 Kurf√ºrstendamm					10707					2022-01-09
+	10			5			 Germany		Munich			 Maximilianstra√üe				80539					2022-01-10
+	11			6			 China			Beijing			 Wangfujing Street				100006					2022-01-11
+	12			6			 China			Shanghai		 Nanjing Road					200003					2022-01-12
+	13			7			 Australia		Sydney			 Pitt Street					2000				        2022-01-13
+	14			7			 Australia		Melbourne		 Chapel Street					3181					2022-01-14
+	15			8			 Brazil			Rio de Janeiro		 Avenida Atl√¢ntica				22070					2022-01-15
 
 
 	--What is the question by credit card and payment approval? (TABLE_payment_Methods)
